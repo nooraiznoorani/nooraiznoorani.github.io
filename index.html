@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneakers store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana;
+        }
+        .main {
+            background-image: url("images/background.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+        img {
+            opacity: 0.80;
+            width: 100%;
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            padding: 1em;
+        }
+        ul {
+            margin: auto;
+            padding: 0;
+            display: grid;
+            max-width: 960px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+            align-items: center;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #80aec7e6;
+            z-index: 1000;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .nav a.active {
+            background-color: #a2a8a4;
+            color: #ffffff;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Slick Kicks</h1>
+            <h2>click a sneaker of your choice</h2>
+        </div>
+
+        <div class="nav" id="nav">
+            <a class="active" href="index.html">Trending</a>
+            <a href="culture.html">Sneaker culture</a>
+            <a href="history.html">Sneaker history</a>
+            <a href="aboutproject.html">About</a>
+            <a href="https://www.footlocker.ca/en/release-dates">Release calender</a>
+        </div>
+
+    </div>
+        <div class="main">
+            <ul>
+                <a href="jordan5.html">
+                    <img src="images/air-jordan-5-.jpg" width="400" height="300">
+                </a>
+                <a href="jordan4.html">
+                    <img src="images/blackcat4.jpg" width="400" height="300">
+                </a>
+                <a href="lebron17.html">
+                    <img src="images/lebron-17.jpg" width="400" height="300">
+                </a>
+                <a href="jordan13.html">
+                    <img src="images/jordan13.jpg"width="400" height="300">
+                </a>
+                <a href="airforce1.html">
+                    <img src="images/airforce1.jpg" width="400" height="300">
+                </a>
+                <a href="zoomfreak.html">
+                    <img src="images/zoomfreaks.jpg" width="400" height="300">
+                </a>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>
+                copy right of Nooraiz Noorani---email for business inquiries---nooraiz.noorani@ashbury.ca
+            </p>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {makeNavSticky()};
+
+        var nav = document.getElementById("nav");
+        var sticky = nav.offsetTop;
+
+        function makeNavSticky() {
+            if (window.pageYOffset >= sticky) {
+                nav.classList.add("sticky")
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

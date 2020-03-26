@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneaker History</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana;
+        }
+        .main {
+            background-image: url("images/background.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+        img {
+            opacity: 0.80;
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin: 0;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #80aec7e6;
+            z-index: 1000;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 18px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .nav a.active {
+            background-color: #a2a8a4;
+            color: #ffffff;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        p {
+            font-size: 25px;
+            color: white;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>Sneaker history</h1>
+        <img src="images/jordan.gif">
+    </div>
+    <div class="nav" id="nav">
+        <a href="index.html">Trending</a>
+        <a href="culture.html">Sneaker culture</a>
+        <a class="active" href="history.html">Sneaker history</a>
+        <a href="aboutproject.html">About</a>
+        <a href="https://www.footlocker.ca/en/release-dates">Release calender</a>
+    </div>
+    <div class="main">
+    <p>
+        Where did it all start? It all started with the trend of sneakers in big sports leagues such as the NBA.
+        The first ever basketball shoes were the Converse Chuck Taylor's. People would wear these shoes on the court and people started wearing them to skateboard in.
+    </p>
+        <img src="images/convers.jpg">
+        <img src="images/skateboard.jpg" height="735">
+     <p>
+         In 1984 an NBA ledgend Michael Jordan joined the league. When he signed with Nike and created his first shoe, The air Jordan 1, it changed the sneaker world forever.
+         This shoe is so iconic it is still worn to this day. This shoe was such a hit that it sold $70 million dollars worth in just two months!
+         People love this shoe so much that high end brands have collaborated with it and it's been retro'd in many different colourways over the years.
+     </p>
+        <img src="images/air-jordan-1-history-maintest.jpg">
+        <img src="images/jordan1banned.jpg" height="320" width="480">
+        <img src="images/jordan1.jpg">
+    <p>
+        People like the jordan 1 so much that they wanted more jordan shoes and so Nike hired a shoe designer named Tinker Hatfield.
+        Tinker had a huge role in Jordan's sneaker line from the third model and up, he designed shoes that the sneaker world loved.
+    </p>
+        <img src="images/tinker-hatfield.png">
+    </div>
+    <div class="footer">
+        <p>
+            copy right of Nooraiz Noorani---email for business inquiries---nooraiz.noorani@ashbury.ca
+        </p>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {makeNavSticky()};
+
+    var nav = document.getElementById("nav");
+    var sticky = nav.offsetTop;
+
+    function makeNavSticky() {
+        if (window.pageYOffset >= sticky) {
+            nav.classList.add("sticky")
+        } else {
+            nav.classList.remove("sticky");
+        }
+    }
+</script>
+</body>
+</html>

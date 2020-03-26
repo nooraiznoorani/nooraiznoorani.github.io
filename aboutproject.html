@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AboutProject</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana;
+        }
+        .main {
+            background-image: url("images/background.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+        img {
+            opacity: 0.80;
+            width: 100%
+        }
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin: 0;
+        }
+        .nav {
+            overflow: hidden;
+            background-color: #80aec7e6;
+            z-index: 1000;
+        }
+        .nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 18px;
+            text-decoration: none;
+            font-size: x-large;
+        }
+        .nav a.active {
+            background-color: #a2a8a4;
+            color: #ffffff;
+        }
+        .nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        p {
+            font-size: 25px;
+            color: white;
+            margin-top: 0;
+            padding-top: 1em;
+        }
+        .imgGroup {
+            max-width: 850px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            grid-gap: 30px;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        ul {
+            margin: 0;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <h1>About Project</h1>
+    </div>
+    <div class="nav" id="nav">
+        <a href="index.html">Trending</a>
+        <a class="active" href="culture.html">Sneaker culture</a>
+        <a href="history.html">Sneaker history</a>
+        <a href="aboutproject.html">About</a>
+        <a href="https://www.footlocker.ca/en/release-dates">Release calender</a>
+    </div>
+    <div class="main">
+        <p>
+            During this project I used online sources to help me when I was stuck. I would read how to make something for example a grid and I would add into my code what I needed. I also had the help of my brother’s girlfriend who guided me in the right directions for certain things such as code layout and text layout.
+            When I originally planned my project, I wanted to have a blank background and many clickable shoes on a rack (as shown in the image below on the left) and each shoe would be clickable.
+        <p/>
+        <img src="images/mainpage.jpeg" height="500" width="1000">
+        <img src="images/contentpage.jpeg" height="500" width="1000">
+        <p>
+            I also wanted some sort of side bar with text and/or images. I also originally wanted a darker colour scheme so that certain images popped. But I changed it to lighter colours because it is easier to read and more legible. In order to complete the project, I started off by planning what I wanted to do and had different ideas and brainstormed what I wanted my cite to look like. I also looked at many other online sneaker stores. To see inspiration and other things that I liked such as colours and layout. (as seen on this link)
+            <a href="https://docs.google.com/document/d/1UKMftOWmrhPArAjjGbp0E6ekPeIG4DDPA-cCmTfxtP8/edit?usp=sharing">Google Doc</a>
+        </p>
+        <p>
+            After looking for inspiration I started creating my main page. I drew out what I wanted it to look like (image above on the right) and based it off my design.
+            I than created my content based off a slightly similar layout and design as my main page. Than I tested my website to see if everything works.
+            You should use my website because it is very interactive. It has the latest and most trending shoes to this date and can teach you about a culture that you may have not known about. I even learned some JavaScript to create a sticky Navigation bar that floats over the page so you can access the other pages with ease. I also linked the individual shoes so that you can look at the shoes more in depth and also go to footlocker and purchase them.
+        </p>
+    <h3>Links I used</h3>
+        <ul>
+               <li>https://www.complex.com/ca</li>
+               <li>https://www.w3schools.com/howto/howto_css_full_page.asp</li>
+               <li>https://www.w3schools.com/howto/howto_js_navbar_sticky.asp</li>
+               <li>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky</li>
+               <li>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_sticky</li>
+               <li>https://www.w3schools.com/css/css_rwd_grid.asp</li>
+               <li>https://www.tutorialbrain.com/css_tutorial/css_font_family_list/</li>
+                <li>https://www.w3schools.com/howto/howto_css_round_buttons.asp</li>
+                <li>https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>
+            copy right of Nooraiz Noorani---email for business inquiries---nooraiz.noorani@ashbury.ca
+        </p>
+    </div>
+</div>
+        <script>
+            window.onscroll = function() {makeNavSticky()};
+
+            var nav = document.getElementById("nav");
+            var sticky = nav.offsetTop;
+
+            function makeNavSticky() {
+                if (window.pageYOffset >= sticky) {
+                    nav.classList.add("sticky")
+                } else {
+                    nav.classList.remove("sticky");
+                }
+            }
+        </script>
+</body>
+</ht
